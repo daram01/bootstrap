@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <style>
+
+        /* 경계선 주기 */
+        .col-md-1, .col-md-8, .col-md-4, .col-md-5, .col-md-6, .col-md-7{
+            border: 1px solid rgb(255, 195, 195);
+        }
+        
+        /* 칸과 칸 사이에 공간 주기 */
+        .row{
+        margin-bottom: 4px;
+        margin-top: 4px;
+        }
+
+        .pad10{
+            padding: 10px;
+            background-color: rgb(235, 255, 235);
+        }
+
+    </style>
+</head>
+<body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  
+
+    <!-- 그리드 시스템(Grid system)
+    css에서는 float, position으로 분할 했던 것을 부트스트랩에서는 그리드를 사용함.
+    부트스트랩에서는 12그리드를 기본으로 제공한다.  -->
+
+    <!-- container 사용. 너비값(width)이 1170가 최대값-->
+    <div class="container">
+        <div class="row"> 
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">col-md-8</div> <!-- 8그리드를 사용하겠다는 뜻 -->
+            <div class="col-md-4">col-md-4</div> <!-- 4그리드를 사용하겠다는 뜻 -->
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4">col-md-4</div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+
+    <!-- container-fluid 사용 -->
+    <div class="container-fluid">
+        <div class="row"> 
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">col-md-8</div> <!-- 8그리드를 사용하겠다는 뜻 -->
+            <div class="col-md-4">col-md-4</div> <!-- 4그리드를 사용하겠다는 뜻 -->
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4">col-md-4</div>
+        </div>
+    </div>
+
+
+    <br><br><br>
+
+
+    <!-- 중첩 그리드 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">col-md-8
+                <div class="row">
+                    <div class="col-md-4 pad10">12개 중에 4개</div>
+                    <div class="col-md-8 pad10">12개 중에 8개</div>
+                </div>
+            </div>
+            <div class="col-md-4">col-md-4
+                <div class="row">
+                    <div class="col-md-6 pad10">12개 중에 6개</div>
+                    <div class="col-md-6 pad10">12개 중에 6개</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br>
+
+    
+    <!-- 그리드 오프셋(가운데를 일부러 비워놓음) -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 pad10">com-md-5</div>
+            <div class="col-md-5 col-md-offset-2 pad10">com-md-5</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 pad10">col-md-4</div>
+            <div class="col-md-7 col-md-offset-1 pad10">col-md-7</div> 
+        </div>
+    </div>
+
+
+</body>
+</html>
